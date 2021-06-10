@@ -8,13 +8,13 @@ class GoogleService {
     _googleSignIn = GoogleSignIn();
   }
 
-  get isNotLogin => _auth.currentUser == null;
-
-  get getCurrentUser => _auth.currentUser!;
-
   googleDispose() {
     _googleSignIn.disconnect();
   }
+
+  get isNotLogin => _auth.currentUser == null;
+
+  get getCurrentUser => _auth.currentUser!;
 
   Future<void> signIn() async {
     try {
