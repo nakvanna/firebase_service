@@ -6,11 +6,11 @@ class AuthController extends GetxController {
   final GoogleService _googleService = GoogleService();
   final title = 'Auth View';
 
-  get isNotLogin => _googleService.isNotLogin;
+  get isGoogleNotLogIn => _googleService.isNotLogIn;
   @override
   void onInit() {
     _googleService.googleInit();
-    if (!isNotLogin) {
+    if (!isGoogleNotLogIn) {
       print(_googleService.getCurrentUser);
     }
     super.onInit();

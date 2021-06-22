@@ -6,9 +6,11 @@ abstract class Routes {
 
   static const HOME = _Paths.HOME;
   static const AUTH = _Paths.AUTH;
+  static const VERIFY_PHONE = _Paths.VERIFY_PHONE;
 }
 
 abstract class _Paths {
   static const HOME = '/home';
   static const AUTH = '/auth';
+  static const VERIFY_PHONE = '/verify-phone';
 }

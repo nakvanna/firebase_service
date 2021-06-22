@@ -4,6 +4,8 @@ import 'package:example/app/modules/auth/bindings/auth_binding.dart';
 import 'package:example/app/modules/auth/views/auth_view.dart';
 import 'package:example/app/modules/home/bindings/home_binding.dart';
 import 'package:example/app/modules/home/views/home_view.dart';
+import 'package:example/app/modules/verify_phone/bindings/verify_phone_binding.dart';
+import 'package:example/app/modules/verify_phone/views/verify_phone_view.dart';
 
 part 'app_routes.dart';
 
@@ -22,6 +24,11 @@ class AppPages {
       name: _Paths.AUTH,
       page: () => AuthView(),
       binding: AuthBinding(),
+    ),
+    GetPage(
+      name: _Paths.VERIFY_PHONE,
+      page: () => VerifyPhoneView(),
+      binding: VerifyPhoneBinding(),
     ),
   ];
 }
